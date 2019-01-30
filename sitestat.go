@@ -369,7 +369,7 @@ func (ss *SiteStat) filterSites() {
 func (ss *SiteStat) load(file string) (err error) {
 	defer func() {
 		// load builtin list first, so user list can override builtin
-		ss.loadBuiltinList()
+		//ss.loadBuiltinList()
 		ss.loadUserList()
 		ss.filterSites()
 		for host, vcnt := range ss.Vcnt {
